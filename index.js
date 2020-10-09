@@ -62,7 +62,7 @@ let v = cardNumber;
   if(!v){
     return "Sorry, we don\'t have a credit card on file for you." }
 var t = total()
-cart.splice(0,0)
+cart.splice(0)
 return `Your total cost is $${t}, which will be charged to the card ${cardNumber}.`
 
 }
