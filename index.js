@@ -39,7 +39,7 @@ function viewCart() {
      return `${firstPart}.`
    }
    else if (l = 2){
-     return  `${firstPart}, ${lastPart}.`
+     return  `${firstPart}, ${lastPart}`
    }
 
 
