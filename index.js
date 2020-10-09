@@ -33,7 +33,7 @@ function viewCart() {
   //  }
     // return `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}, ${k} and ${cart[cart.length-1]["itemName"]} at $${cart[cart.length-1]["itemPrice"]}.`
    var firstPart = `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}`
-   var middlePart = `${cart[i]["itemName"]} at $${cart[i]["itemPrice"]},`
+   //var middlePart = `${cart[i]["itemName"]} at $${cart[i]["itemPrice"]},`
    var lastPart = `and ${cart[cart.length-1]["itemName"]} at $${cart[cart.length-1]["itemPrice"]}.`
    if (l = 1){
      return `${firstPart}.`
