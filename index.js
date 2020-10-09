@@ -22,16 +22,29 @@ function viewCart() {
     return "Your shopping cart is empty."
   }
   var l = cart.length;
-  var k = []
-  switch(l){
-    case 1: return `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}.`
-    case 2: return `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}, and ${cart[cart.length-1]["itemName"]} at $${cart[cart.length-1]["itemPrice"]}.`
-    }
+  //var k = []
+  //switch(l){
+    //case 1: return `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}.`
+    //case 2: return `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}, and ${cart[cart.length-1]["itemName"]} at $${cart[cart.length-1]["itemPrice"]}.`
+    //}
 
-    for (let i = 1; i < cart.length - 1; i++){
-          k.unshift(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]},`)
-    }
-     return `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}, ${k} and ${cart[cart.length-1]["itemName"]} at $${cart[cart.length-1]["itemPrice"]}.`
+    //for (let i = 1; i < cart.length - 1; i++){
+      //    k.unshift(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]},`)
+  //  }
+    // return `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}, ${k} and ${cart[cart.length-1]["itemName"]} at $${cart[cart.length-1]["itemPrice"]}.`
+   var firstPart = `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}`
+   var middlePart = `${cart[i]["itemName"]} at $${cart[i]["itemPrice"]},`
+   var lastPart = `and ${cart[cart.length-1]["itemName"]} at $${cart[cart.length-1]["itemPrice"]}.`
+   if (l = 1){
+     return `${firstPart}.`
+   }
+   else if (l=2){
+     return  `${firstPart}, ${lastPart}`
+   }
+
+
+
+
   }
   // write your code here
 
